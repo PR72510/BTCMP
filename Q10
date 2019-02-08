@@ -1,0 +1,9 @@
+<article> - The <article> element is one of the major HTML5 semantic tags. It is used to define the article content on your website. It is usually used for big parts of the text.
+
+<aside> - The <aside> semantic element defines the content which will be set to the side. It is occasionally used for creating sidebars but can also be used for less important content sharing.
+
+<details> - This is one of the HTML5 semantic tags that defines the details on your website. The details can either be visible to the audience of hidden.
+
+<figcaption> - The <figcaption> tag generates a title for <figure> element. It always goes together with <figure> element.
+
+<mark> - The <mark> element makes the text highlighted to emphasize its meaning
