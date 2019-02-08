@@ -1,0 +1,9 @@
+FLOAT-Float pushes an element to any side of web page or we can say that float specifies how an element can float.
+	left - The element floats to the left of its container
+	right- The element floats to the right of its container
+	none - The element does not float.By default value is none.
+	inherit - The element inherits the float value of its parent
+
+CLEAR-Does not allow the element to float around a specified element.
+	left, right, none , initital, inherit- inherits property from the parent element.
+
