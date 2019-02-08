@@ -1,0 +1,5 @@
+Block elements are those elemnts that take up whole width on the wwebpage. A block element starts from new line every time it is created.
+Eg-Paragraph<p>, Header<h1>, <div>,Form<form>
+
+Inline elements only take up that much width which is required. So new element can also occupy that line.
+Eg- Span<span>, Images<img>, Anchors<a> 
