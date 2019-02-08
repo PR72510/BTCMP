@@ -1,0 +1,1 @@
+Display:none, removes the element from the page so that it does not occupy any space on the webpage whereas Visibilty:hidden hides the content from the page but it still occupies the space on the webpage.  
