@@ -1,0 +1,10 @@
+UNIVERSAL SELECTOR- The universal selector works like a wild card character, selecting all elements on a page. Every HTML page is built on content placed within HTML tags. Each set of tags represents an element on the page.
+
+ELEMENT TYPE SELECTOR- Also referred to simply as a “type selector,” this selector must match one or more HTML elements of the same name. Thus, a selector of nav would match all HTML nav elements, and a selector of <ul> would match all HTML unordered lists, or <ul> elements.
+
+ID SELECTOR- It is declared using #, the selector matches HTML attributes having the same ID in ID attribute but without #.
+
+CLASS SELECTOR- It is declared using . The element are matched using class equal to the name of the class defined.
+
+DESCENDENT COMBINATOR- The descendant selector or, more accurately, the descendant combinator lets you combine two or more selectors so you can be more specific in your selection method.
+ 
