@@ -1,0 +1,4 @@
+FIXED- The element is positioned according to the browser window.
+STATIC- The elements are ordered as they appear on the dociument. This is the default value.
+RELATIVE- The elemnt is positioned relative to its original posotion.
+ABSOLUTE- The element is positioned absolutely to its first positioned parent. 
