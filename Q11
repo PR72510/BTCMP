@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>webpage|layout</title>
+       <link href="web.css" rel="stylesheet">
+   </head>
+   <body>
+   <div id="main">
+       <header>
+           <div id="container">
+               <h1>TO The New</h1>
+               <ul style="padding-left: 5px;">
+                   <li>Text Link</li>
+                   <li>Text Link</li>
+                   <li>Text Link</li>
+                   <li>Text Link</li>
+                   <li>Text Link</li>
+              </ul>
+           </div>
+           <!--container-->
+       </header>
+     
+           <div id="main_con">
+               <div id="black">
+                   <p>960 x 360 px</p>
+               </div>
+               <!--black-->
+               <div id="l_grey">
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                       Lorem Ipsum has been the industry's
+                        standard dummy text
+                        ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to make a type specimen book.
+                   </p>
+               </div>
+               <!--l_grey-->
+               <div id="bottom">
+                   <h2>Latest from the gallery</h2>
+                   <div class="b_block">
+                       <section>
+
+                       </section>
+                       <p>Image Caption Here</p>
+                   </div>
+                   <!--block-->
+                   <div class="b_block">
+                       <section>
+                          
+                       </section>
+                       <p>Image Caption Here</p>
+                       </div>
+                       <!--block-->
+                       <div class="b_block">
+                               <section>
+                          
+                                   </section>
+                                   <p>Image Caption Here</p>
+                           </div>
+                           <!--block-->
+                           <div class="b_block">
+                                   <section>
+                          
+                                       </section>
+                                       <p>Image Caption Here</p>
+                               </div>
+                               <!--block-->
+               </div>
+               <footer>
+                   <section id="f_con">
+                       <p>Copyright &copy; 2009-2017-All Rights Reserved-To the New</p>
+                       <span>  Web layout to the new</span>
+                   </section>
+               </footer>
+           </div>
+           <!--main_con-->
+           </div>
+       <!--main-->
+   </body>
+</html>
