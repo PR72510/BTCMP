@@ -1,0 +1,66 @@
+HTML Part-
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Question 5</title>
+    <script src="Q5.js"> </script>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+JAVASCRIPT Part-
+
+var e_list = [
+    { name: 'Shubham', age: 35, salary: 4000, dob: '30-12-1981'},
+    { name: 'Jatin', age: 25, salary: 3000, dob: '10-10-1988'},
+    { name: 'Kushagra', age: 45, salary: 900, dob: '10-02-1973'},
+    { name: 'Umang', age: 45, salary: 2000, dob: '15-08-1949'},
+    { name: 'Shantanu', age: 25, salary: 500, dob: '05-09-1998'},
+    { name: 'Vishal', age: 18, salary: 700, dob: '11-10-2000'}
+];
+document.write("<br> Details of Employees<br> ")
+e_list.forEach(
+    function(new1){
+        document.write(JSON.stringify(new1) + "<br>")
+    }
+)
+
+
+document.write("<br>Employees having salary greater than 5000 <br>")
+
+e_list.forEach(
+    function(new1){
+        if (new1.salary >= 5000){
+            document.write( new1.name + "<br>")
+        }
+    }
+)
+
+
+Array.prototype.groupBy = function(prop) {
+    return this.reduce(function(groups, item) {
+      const val = item[prop]
+      groups[val] = groups[val] || []
+      groups[val].push(item)
+      return groups
+    }, {})
+  }
+
+document.write("<br> Grouping employees based on their age  <br> ")
+document.write(JSON.stringify(e_list.groupBy("age")) + "<br>");
+
+
+document.write("<br> Incremeting salary of Employees with age greater than 20 and salary less than 1000 <br> ")
+
+e_list.forEach(
+    function(new1){
+        if (new1.salary < 1000 && ele.age>20){
+            new1.salary *=5
+            document.write(new1.name + ": " + new1.salary + "<br>")
+        }
+    }
+)
