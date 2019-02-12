@@ -1,0 +1,26 @@
+HTML Part-
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Area_Circle</title>
+    <script src="circle.js">  </script>
+  </head>
+  <body>
+    <h3>Area of Circle</h3>
+    Enter radius of Circle:<input type="text" id="myText">
+    <button type="button" onclick="calc()" name="button">Calculate</button><br>
+    <p id="new"></p>
+
+  </body>
+</html>
+
+JAVASCRIPT Part-
+
+function calc() {
+  var rad = document.getElementById('myText').value
+  var area = 3.14 * rad * rad;
+  //document.getElementById('new').innerHTML=area;
+  alert("Area of Circle is " + area);
+}
