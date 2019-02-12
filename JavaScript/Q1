@@ -1,1 +1,42 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Intrest</title>
+    <script>
+        var Amount, IR, Years;
+      function myFunction(){
+         Amount = prompt("Enter your amount", "Amount");
+        return Amount;
+      }
+      function myFunction1(){
+         IR = prompt("Enter your Rate of Intrest", "0%");
+         return IR;
+      }
+      function myFunction2(){
+         Years = prompt("Enter No. of years", "0");
+         return Years;
+      }
+      function submit() {
+        var Ans = ((Amount*IR*Years)/100);
+        document.getElementById('demo').innerHTML = Ans;
+      }
+
+
+
+    </script>
+  </head>
+  <body>
+      <p>Calculating S.I. Enter the values</p>
+
+      <button onclick="myFunction()">Amount</button><br>
+      <button onclick="myFunction1()">Intrest Rate</button><br>
+      <button onclick="myFunction2()">No. of Years</button><br>
+      <button onclick="submit()">Calculate</button><br>
+
+      <p id="demo"></p>
+
+
+  </body>
+</html>
