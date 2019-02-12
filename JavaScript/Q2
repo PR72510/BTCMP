@@ -1,0 +1,30 @@
+HTML Part-
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Palindrome</title>
+     <script src="palin.js"></script>
+  </head>
+  <body>
+    <h3>Check for Palindrome</h3>
+    Enter your input here:<input type="text" id="myText"><br>
+     <button onclick="calc()">Check</button><br>
+    <p id="new"></p>
+  </body>
+</html>
+
+JAVASCRIPT Part-
+
+function calc() {
+var x = document.getElementById('myText').value
+str=x.split('');
+n=x.length;
+var l =0; var h=n-1;
+while(str[l]!=str[h]){
+  document.getElementById('new').innerHTML="Not Palindrome"
+}
+  document.getElementById('new').innerHTML="String is Palindrome";
+
+}
