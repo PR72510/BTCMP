@@ -1,0 +1,22 @@
+HTML Part-
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="Q4.js"></script>
+    <title>Copying Object</title>
+  </head>
+  <body>
+    <h3>Copying information of one object to another</h3>
+    <button type="button" onclick="copy()" name="button">Begin</button>
+  </body>
+</html>
+
+Javascript-
+
+function copy() {
+  var obj = {a:1,b:2,c:3,d:4};
+  var obj_copy = Object.assign({},obj);
+  console.log(obj_copy);  
+}
