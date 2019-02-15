@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Q9</title>
+    <script type = "text/javascript"
+        src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+     </script>
+     <script type="text/javascript">
+     $(document).ready(function(){
+      $("#country").change(function(){
+        $(".new").append("<br/>"+ $("#country").val());
+      });
+    });
+
+     </script>
+  </head>
+  <body>
+
+    <select id ="country">
+      <option value="India">India</option>
+      <option value="United States">United States</option>
+      <option value="Malaysia">Malaysia</option>
+      <option value="Israel">Israel</option>
+    </select><br>
+
+    <div class="new">
+
+    </div>
+  </body>
+</html>
