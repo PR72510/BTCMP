@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Q6</title>
+    <script type = "text/javascript"
+        src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+     </script>
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $(".new").click(function(){
+          $(".new").replaceWith("<p>Now it is a paragraph</p>");
+         });
+       });
+     </script>
+  </head>
+  <body>
+    <h3>Clicking on line below will change it to paragraph</h3>
+    <div class="new">
+      This is Div
+    </div><br>
+
+  </body>
+</html>
