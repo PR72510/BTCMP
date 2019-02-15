@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Q3</title>
+    <script type = "text/javascript"
+        src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+     </script>
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $('button').click(function(){
+          $("[class$=new]").css("background-color","yellow"); 
+         });
+       });
+     </script>
+  </head>
+  <body>
+    <div class="2danew"> Colour is gonna change  </div>
+    <button type="button" name="button">Click!</button>
+  </body>
+</html>
