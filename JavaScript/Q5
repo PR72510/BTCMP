@@ -16,11 +16,11 @@ JAVASCRIPT Part-
 
 var e_list = [
     { name: 'Shubham', age: 35, salary: 4000, dob: '30-12-1981'},
-    { name: 'Jatin', age: 25, salary: 3000, dob: '10-10-1988'},
+    { name: 'Jatin', age: 25, salary: 5001, dob: '10-10-1988'},
     { name: 'Kushagra', age: 45, salary: 900, dob: '10-02-1973'},
     { name: 'Umang', age: 45, salary: 2000, dob: '15-08-1949'},
     { name: 'Shantanu', age: 25, salary: 500, dob: '05-09-1998'},
-    { name: 'Vishal', age: 18, salary: 700, dob: '11-10-2000'}
+    { name: 'Vishal', age: 18, salary: 7000, dob: '11-10-2000'}
 ];
 document.write("<br> Details of Employees<br> ")
 e_list.forEach(
