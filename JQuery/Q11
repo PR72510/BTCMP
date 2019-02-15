@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Q11</title>
-    <script type = "text/javascript"
-        src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-     </script>
-     <script type="text/javascript">
-       $(document).ready(function(){
-         $("#new").click(function(){
-           $("#par").html("Won`t work now");
-           $("a").attr("href","");
-         });
-       });
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript"
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
 
-     </script>
-  </head>
-  <body>
-    <a href="https://www.google.com/">Google</a><br>
-    <button type="button" id="new">Stop working of Tag</button>
-    <p id="par"></p>
-  </body>
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+            $("a").click(function(event){
+               event.preventDefault();
+               alert( "Default behavior is disabled!" );
+            });
+         });
+      </script>
+   </head>
+
+   <body>
+      <span>Click the following link and it won't work:</span><br>
+      <a href = "https://www.google.com">GOOGLE Inc.</a>
+   </body>
 </html>
+
