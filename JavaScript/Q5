@@ -58,7 +58,7 @@ document.write("<br> Incremeting salary of Employees with age greater than 20 an
 
 e_list.forEach(
     function(new1){
-        if (new1.salary < 1000 && ele.age>20){
+        if (new1.salary < 1000 && new1.age>20){
             new1.salary *=5
             document.write(new1.name + ": " + new1.salary + "<br>")
         }
