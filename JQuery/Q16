@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Q16</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            var json;
+            $(document).ready(function(){
+                $("#get_data").click(function(){
+                    $("#table_head").children().replaceWith("")
+                    $("#table_body").children().replaceWith("")
+                    $.ajax({url: "https://api.myjson.com/bins/ooz4u", success: function(result){
+                        $("#table_head").append("<th> Name </th> <th> Age </th> <th> DOB </th> <th> Gender </th> <th> x </th>")
+                        $("#data").attr({"border":"1", "cellpadding":"5px"})
+                        putJsonInTable(result);
+                        json = result;
+                    }});
+                })
+
+            })
+            var putJsonInTable = function(data){
+                var i = 0
+                data.forEach(function (item) {
+                    $("#table_body").append("<tr> <td>" + item.name + "</td> <td>" + item.age + "</td> <td>" + item.dob + "</td> <td>" + item.gender + "</td> <td> <button class='b" + i +"' id='del_btn'>x</button> </tr>")
+                    i++
+                });
+            }
+            $(document).on("click","#del_btn",function(){
+                var clicked_id = $(this).attr("class")
+                json.splice(clicked_id[1],1)
+                $("#table_body").children().replaceWith("")
+                putJsonInTable(json)
+            })
+
+        </script>
+    </head>
+    <body>
+        <h2>Solution 16</h2>
+        <div id="main">
+            <button id="get_data">Get Data!</button><br><br>
+            <div id="container">
+            </div>
+            <div>
+                <table id="data" style="border-collapse: collapse;">
+                    <thead id="table_head">
+
+                    </thead>
+                    <tbody id="table_body">
+
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <table id="data1" style="border:1; border-collapse: collapse;">
+                    <thead id="table_head1">
+
+                    </thead>
+                    <tbody id="table_body1">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+</html>
