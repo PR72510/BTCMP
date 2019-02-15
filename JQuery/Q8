@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Q8</title>
+    <script type = "text/javascript"
+        src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+     </script>
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $("button").on("click",function(){
+           alert("Working now, using .on method")
+         });
+       });
+
+     </script>
+  </head>
+  <body>
+    <button type="button" name="button">Click</button>
+
+  </body>
+</html>
