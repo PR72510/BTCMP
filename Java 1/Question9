@@ -17,4 +17,5 @@ enum Houses{
      public void getPrice(){
          System.out.println("Cost of " +name()+ " is " +cost);
      }
+
 }
